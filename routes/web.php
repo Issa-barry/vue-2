@@ -33,3 +33,6 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+Route::get('/t1', function () {return Inertia::render('Test/test');})->name('t1');
+Route::get('/t2', function () {return Inertia::render('Test/t2');})->name('t2');
